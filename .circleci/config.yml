@@ -1,0 +1,18 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: xyzuan/xdocker:latest
+   steps:
+      - run:
+          command: |
+            git clone --depth=1 https://github.com/WallBreaker2407/android_kernel_asus_sdm660.git -b RTX-ON-LV-HMP-OC-2.22 kernel && cd kernel
+            curl https://raw.githubusercontent.com/WallBreaker2407/RTX-BUILDER-COMPILER-KERNEL/main/build.sh > run.sh
+            source run.sh
+          no_output_timeout : 5h
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile 
+      
