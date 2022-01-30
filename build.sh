@@ -57,9 +57,9 @@ MANUFACTURERINFO="ASUSTek Computer Inc."
 # Kernel Variant
 NAMA=RTX-Project-HMP
 
-KERNEL_FOR=LV-HMP-Overclock
+KERNEL_FOR=HMP-UC
 
-JENIS=[OC-LV]
+JENIS=[UC]
 
 VARIAN=20.80
 
@@ -67,7 +67,7 @@ VARIAN=20.80
 BUILD_TYPE="Nightly"
 
 # Varian Kernel
-VERSI_KENEL=RTX-LV-2.22Ghz
+VERSI_KENEL=RTX-HMP-UC
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
