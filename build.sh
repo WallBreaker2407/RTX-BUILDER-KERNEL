@@ -61,7 +61,7 @@ KERNEL_FOR=HMP-UC
 
 JENIS=[UC]
 
-VARIAN=20.80
+VARIAN=20.80-#2
 
 # Build Type
 BUILD_TYPE="Nightly"
@@ -183,7 +183,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 # Function to replace defconfig versioning
 setversioning() {
     # For staging branch
-    KERNELNAME="$JENIS-$NAMA-$VARIAN-$KBUILD_BUILD_VERSION-$DATE2"
+    KERNELNAME="$JENIS-$NAMA-$VARIAN-$DATE2"
     # Export our new localversion and zipnames
     export KERNELNAME
     export ZIPNAME="$KERNELNAME.zip"
