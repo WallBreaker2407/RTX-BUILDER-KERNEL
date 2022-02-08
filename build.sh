@@ -67,7 +67,7 @@ VARIAN=20.80-#2
 BUILD_TYPE="Nightly"
 
 # Varian Kernel
-VERSI_KENEL=RTX-HMP-OVERCLOCK
+VERSI_KENEL=RTX-HMP-OVERCLOCK-2.22Ghz
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
