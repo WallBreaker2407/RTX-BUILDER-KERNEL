@@ -59,7 +59,7 @@ NAMA=RTX-Project-HMP
 
 KERNEL_FOR=HMP-OVERCLOCK
 
-JENIS=[OC]
+JENIS=[OC-LV]
 
 VARIAN=20.80-#2
 
@@ -67,7 +67,7 @@ VARIAN=20.80-#2
 BUILD_TYPE="Nightly"
 
 # Varian Kernel
-VERSI_KENEL=RTX-HMP-OC
+VERSI_KENEL=RTX-HMP-OVERCLOCK
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
@@ -193,7 +193,7 @@ setversioning() {
 
 exports() {
 	export KBUILD_BUILD_USER="android-build"
-    export KBUILD_BUILD_HOST="WallBreaker2407"
+    export KBUILD_BUILD_HOST="arch-linux"
     export KBUILD_BUILD_VERSION="2"
 	export ARCH=arm64
 	export SUBARCH=arm64
