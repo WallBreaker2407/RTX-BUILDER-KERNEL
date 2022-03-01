@@ -6,7 +6,7 @@ jobs:
    steps:
       - run:
           command: |
-            git clone --depth=1 https://github.com/WallBreaker2407/android_kernel_asus_sdm636.git -b RTX-NLV-OC-2.22 kernel && cd kernel
+            git clone --depth=1 https://github.com/WallBreaker2407/android_kernel_asus_sdm636.git -b X00T kernel && cd kernel
             curl https://raw.githubusercontent.com/WallBreaker2407/RTX-BUILDER-COMPILER-KERNEL/RTX-NLV-OC-2.22/build.sh > run.sh
             source run.sh
           no_output_timeout : 5h
