@@ -59,9 +59,9 @@ NAMA=RTX-Project-HMP
 
 KERNEL_FOR=HMP-OVERCLOCK
 
-JENIS=[OC-NLV]
+JENIS=[NLV]
 
-VARIAN=20.80-[P-Q]
+VARIAN=v4.4.302
 
 # Build Type
 BUILD_TYPE="Nightly"
@@ -389,7 +389,7 @@ gen_zip() {
 	sed -i "s/kernel.string=.*/kernel.string=$NAMA-$VARIAN/g" anykernel.sh
 	sed -i "s/kernel.for=.*/kernel.for=$KERNEL_FOR/g" anykernel.sh
 	sed -i "s/kernel.compiler=.*/kernel.compiler=$COMPILER/g" anykernel.sh
-	sed -i "s/kernel.made=.*/kernel.made=WALLBREAKER @WallBreaker24/g" anykernel.sh
+	sed -i "s/kernel.made=.*/kernel.made=WALLBREAKER @WallBreaker240/g" anykernel.sh
 	sed -i "s/kernel.version=.*/kernel.version=$LINUXVER/g" anykernel.sh
 	sed -i "s/message.word=.*/message.word=don't blame me if u get poor battery backup or weak performance . i'm not responsible . Do with Your Own Risk./g" anykernel.sh
 	sed -i "s/build.date=.*/build.date=$DATE2/g" anykernel.sh
