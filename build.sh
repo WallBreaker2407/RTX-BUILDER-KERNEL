@@ -55,13 +55,13 @@ DEFCONFIG=RTX_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=RTX-Project-HMP
+NAMA=RTX-Project-HMP-OC
 
 KERNEL_FOR=HMP-OVERCLOCK
 
 JENIS=[NLV]
 
-VARIAN=v4.4.302
+VARIAN=$LINUXVER
 
 # Build Type
 BUILD_TYPE="Nightly"
