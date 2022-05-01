@@ -384,6 +384,17 @@ gen_zip() {
 	then
 		mv "$KERNEL_DIR"/out/arch/arm64/boot/dtbo.img AnyKernel3/dtbo.img
 	fi
+	cd AnyKernel3 || exit
+	cp -af anykernel-real.sh anykernel.sh
+	sed -i "s/kernel.string=.*/kernel.string=$NAMA-$VARIAN/g" anykernel.sh
+	sed -i "s/kernel.for=.*/kernel.for=$KERNEL_FOR/g" anykernel.sh
+	sed -i "s/kernel.compiler=.*/kernel.compiler=$COMPILER/g" anykernel.sh
+	sed -i "s/kernel.made=.*/kernel.made=WALLBREAKER @WallBreaker240/g" anykernel.sh
+	sed -i "s/kernel.version=.*/kernel.version=$LINUXVER/g" anykernel.sh
+	sed -i "s/message.word=.*/message.word=don't blame me if u get poor battery backup or weak performance . i'm not responsible . Do with Your Own Risk./g" anykernel.sh
+	sed -i "s/build.date=.*/build.date=$DATE2/g" anykernel.sh
+
+
 	
 	zip -r9 "$ZIPNAME" * -x .git README.md anykernel-real.sh .gitignore zipsigner* *.zip
 
