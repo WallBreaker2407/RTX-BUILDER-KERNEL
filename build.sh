@@ -61,7 +61,7 @@ KERNEL_FOR=HMP-OVERCLOCK
 
 JENIS=[LV]
 
-VARIAN=PRIVATE-#2
+VARIAN=v$(make kernelversion)
 
 # Build Type
 BUILD_TYPE="Nightly"
