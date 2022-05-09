@@ -193,7 +193,7 @@ setversioning() {
 
 exports() {
 	export KBUILD_BUILD_USER="android-build"
-    export KBUILD_BUILD_HOST="ARCH_LINUX"
+    export KBUILD_BUILD_HOST="WallBreakerz"
     export KBUILD_BUILD_VERSION="2"
 	export ARCH=arm64
 	export SUBARCH=arm64
