@@ -193,7 +193,7 @@ setversioning() {
 
 exports() {
 	export KBUILD_BUILD_USER="android-build"
-    export KBUILD_BUILD_HOST="arch-linux"
+    export KBUILD_BUILD_HOST="WallBreakerz"
     export KBUILD_BUILD_VERSION="2"
 	export ARCH=arm64
 	export SUBARCH=arm64
@@ -389,7 +389,7 @@ gen_zip() {
 	sed -i "s/kernel.string=.*/kernel.string=$NAMA-$VARIAN/g" anykernel.sh
 	sed -i "s/kernel.for=.*/kernel.for=$KERNEL_FOR/g" anykernel.sh
 	sed -i "s/kernel.compiler=.*/kernel.compiler=$COMPILER/g" anykernel.sh
-	sed -i "s/kernel.made=.*/kernel.made=P.L.A.N.K.T.O.N @plankton824/g" anykernel.sh
+	sed -i "s/kernel.made=.*/kernel.made=WALLBREAKER @WallBreakerz/g" anykernel.sh
 	sed -i "s/kernel.version=.*/kernel.version=$LINUXVER/g" anykernel.sh
 	sed -i "s/message.word=.*/message.word=don't blame me if u get poor battery backup or weak performance . i'm not responsible . Do with Your Own Risk./g" anykernel.sh
 	sed -i "s/build.date=.*/build.date=$DATE2/g" anykernel.sh
