@@ -59,7 +59,7 @@ NAMA=RTX-Project-HMP-OC
 
 KERNEL_FOR=HMP-OVERCLOCK
 
-JENIS=[LV-NLV]
+JENIS=[LV]
 
 VARIAN=v$(make kernelversion)
 
