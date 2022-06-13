@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   compile:
    docker:
-      - image: xyzuan/xdocker:latest
+      - image: fajar4561/aosp-builder:latest
    steps:
       - run:
           command: |
