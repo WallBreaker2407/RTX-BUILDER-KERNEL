@@ -55,7 +55,7 @@ DEFCONFIG=X00T_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=RTX-Project-HMP-OC
+NAMA=RTX-Project-CAF-OC
 
 KERNEL_FOR=HMP-OVERCLOCK
 
