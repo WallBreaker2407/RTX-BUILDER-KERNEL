@@ -55,7 +55,7 @@ DEFCONFIG=RTX_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=RTX-Project-HMP-OC
+NAMA=RTX-Project-PQ-HMP-OC
 
 KERNEL_FOR=HMP-OVERCLOCK
 
@@ -169,7 +169,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 		GCC32_DIR=$KERNEL_DIR/gcc32
 
 	msg "|| Cloning Anykernel ||"
-        git clone https://github.com/WallBreaker2407/AnyKernel3.git -b main AnyKernel3
+        git clone https://github.com/WallBreaker2407/Aroma-Installer.git -b RTX-PQ-NLV AnyKernel3
 
 	if [ $BUILD_DTBO = 1 ]
 	then
@@ -393,8 +393,7 @@ gen_zip() {
 	sed -i "s/kernel.version=.*/kernel.version=$LINUXVER/g" anykernel.sh
 	sed -i "s/message.word=.*/message.word=don't blame me if u get poor battery backup or weak performance . i'm not responsible . Do with Your Own Risk./g" anykernel.sh
 	sed -i "s/build.date=.*/build.date=$DATE2/g" anykernel.sh
-	sed -i "s/support.android.version=.*/support.android.version=9.0-12.0/g" anykernel.sh
-
+	sed -i "s/support.android.version=.*/support.android.version=9.0-10/g" anykernel.sh
 
 	
 	zip -r9 "$ZIPNAME" * -x .git README.md anykernel-real.sh .gitignore zipsigner* *.zip
