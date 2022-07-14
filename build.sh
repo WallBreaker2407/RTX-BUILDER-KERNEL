@@ -55,11 +55,11 @@ DEFCONFIG=RTX_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=RTX-Project-PQ-HMP-OC
+NAMA=RTX-Project-HMP-OC
 
 KERNEL_FOR=HMP-OVERCLOCK
 
-JENIS=[NLV]
+JENIS=[PQ]
 
 VARIAN=v$(make kernelversion)
 
